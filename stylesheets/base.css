@@ -1,0 +1,107 @@
+body {
+    background-color: #19A1AD;
+    position: relative;
+    height: 100vh;   /* so that the circles positions relative to whole html*/
+    display: grid;
+}
+
+.bg-pattern-top {
+    transform: translate(-50%, -65%);  /*relative to screen, responsive*/
+    position: absolute;
+}
+
+.bottom-pattern-container {
+    width: 60vw;
+    height: 50vh;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    overflow: clip;
+}
+
+.bg-pattern-bottom {
+    transform: translate(20%, 10%);
+    position: absolute;
+}
+
+.card {
+    justify-self: center;
+    align-self: center;
+    width: 50vw;
+    min-width: 300px;
+    max-width: 440px;
+    height: 450px;
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: 5;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 34% 36% 30%;
+}
+
+.circles-bg {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    overflow: clip;
+}
+
+.vic-container {
+    justify-self: center;
+}
+
+.vic-info {
+    transform: translateY(-80%);
+}
+
+.vic-info p {
+    text-align: center;
+}
+
+.bold {
+    text-align: center;
+    margin-right: 3px;
+}
+
+.img-victor {
+    width: 96px;  /* taken from image dimensions*/
+    border: transparent;
+    border-radius: 50%;
+    border: #FFFFFF 8px solid;
+    transform: translateY(-50%);
+}
+
+.records-container {
+    display: flex;
+    border-top: hsl(0, 1%, 74%) solid 0.5px;
+    justify-content: space-around;
+}
+
+.records-container div {
+    align-self: center;
+}
+
+.records-container .lite-font {
+    font-size: 14px;
+    margin-top: 3px;
+    letter-spacing:0.15em;
+}
+
+.lite-font, .bold{
+  text-align: center;
+  font-family: "Kumbh Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:"YOPQ" 300;
+  font-size: 18px;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    justify-self: center;
+}
